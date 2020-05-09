@@ -45,14 +45,14 @@ class _HomeScreenState extends State<HomeScreen> {
               label: '単語一覧を見る',
               color: Colors.grey,
             ),
-            SizedBox(
+            const SizedBox(
               height: 120.0,
             ),
-            Text(
+            const Text(
               'powered by Hiropon 2020',
               style: TextStyle(fontFamily: 'Mont'),
             ),
-            SizedBox(
+            const SizedBox(
               height: 16.0,
             ),
           ],
@@ -80,7 +80,7 @@ class _HomeScreenState extends State<HomeScreen> {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 20.0),
       child: SwitchListTile(
-        title: Text('暗記済みの単語を含む'),
+        title: const Text('暗記済みの単語を含む'),
         value: isIncludedMemorizedWords,
         onChanged: (value) {
           setState(() {
@@ -101,7 +101,7 @@ class _HomeScreenState extends State<HomeScreen> {
             value: false,
             groupValue: isIncludedMemorizedWords,
             onChanged: (value) => _onRadioSelected(value),
-            title: Text(
+            title: const Text(
               '暗記済みの単語を除外する',
               style: TextStyle(fontSize: 16.0),
             ),
@@ -110,7 +110,7 @@ class _HomeScreenState extends State<HomeScreen> {
             value: true,
             groupValue: isIncludedMemorizedWords,
             onChanged: (value) => _onRadioSelected(value),
-            title: Text(
+            title: const Text(
               '暗記済みの単語を含む',
               style: TextStyle(fontSize: 16.0),
             ),
